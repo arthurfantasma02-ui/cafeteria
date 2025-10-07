@@ -1,0 +1,184 @@
+/*Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+/* === Estilo geral === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9f5f1;
+  color: #4b3832;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === Cabeçalho === */
+header {
+  background-color: #d9b99b;
+  padding: 20px;
+  border-bottom: 2px solid #b89c83;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+header h1 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #5e463c;
+}
+
+/* === Navegação === */
+nav {
+  background-color: #f3e6d8;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #c2a68d;
+}
+
+nav h2 {
+  font-size: 1.4em;
+  color: #4b3832;
+}
+
+/* === Conteúdo principal === */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+}
+
+/* === Lista de clientes === */
+#lista {
+  list-style: none;
+  width: 45%;
+  max-width: 400px;
+  background-color: #fff8f4;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf3ee;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+#lista li:hover {
+  background-color: #f6e3d7;
+}
+
+.nome {
+  font-weight: 600;
+}
+
+.email {
+  font-size: 0.9em;
+  color: #7a5e52;
+}
+
+.remover {
+  background-color: #c86b5d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.remover:hover {
+  background-color: #a54f44;
+}
+
+/* === Formulário === */
+form {
+  width: 45%;
+  max-width: 400px;
+  background-color: #fff8f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #4b3832;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9a98c;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background-color: #fffdfb;
+}
+
+input:focus {
+  outline: none;
+  border-color: #b5835a;
+  box-shadow: 0 0 4px #c7a48b;
+}
+
+button#addclient {
+  width: 100%;
+  background-color: #b5835a;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button#addclient:hover {
+  background-color: #8f6546;
+}
+
+/* === Rodapé === */
+footer {
+  text-align: center;
+  background-color: #d9b99b;
+  padding: 10px;
+  font-size: 0.9em;
+  border-top: 2px solid #b89c83;
+  color: #4b3832;
+}
